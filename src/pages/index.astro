@@ -6,10 +6,209 @@ import Footer from '@components/Footer.astro';
 
 <Layout title='Astro'>
 	<Header />
-	<div class=''>
-		<h1 class='mt-4 text-xl'>Home</h1>
-		<p>This is the Astro homepage page.</p>
-		<img src='/img/icon-home.png' />
+	<div class='relative'>
+		<img src="/img/bg-hero-home.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+		<div class="container max-w-7xl min-h-136 relative z-20 pt-18 pb-11 lg:py-11">
+			<div class="flex justify-center text-center">
+				<h1 class="text-brand-primary uppercase font-bold text-3xl">
+					<span class="block text-white">UW RECHT.</span>
+					ONZE EXPERTISE.</h1>
+			</div>
+		</div>
+	</div>
+	<div class="pt-12 pb-12 md:pb-16 container max-w-7xl">
+		<div class="flex justify-center text-center">
+			<div class="md:w-3/4 xl:w-2/3 mx-auto">
+				<div class="px-18 py-px bg-brand-primary md:inline-block mb-8">
+					<p class="text-white font-bold">Ghekiere - Hoste - Verhulst</p>
+				</div>
+				<p class="text-brand-dark pb-8">GV Advocaten brengt jong enthousiasme enerzijds en gevestigde Izegemse waarde anderzijds samen in 1 kantoor. Het vernieuwde GV Advocaten is een samensmelting van het bestaande GV Advocaten en het Advocatenkantoor Hoste. In deze nieuwe samenstelling, is GV Advocaten een nóg betere partner voor al uw juridische vragen. Dat doen we op een persoonlijke manier, met een snelle en directe communicatie en een flexibele manier van werken.
+				</p>
+				<a href="/" class="btn-primary">Het Kantoor</a>
+				<div class="flex justify-center gap-3 items-center mt-10">
+					<a href="/">
+						<svg class="size-7 text-brand-gray-dark hover:text-black transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path></svg>
+					</a>
+					<div>
+						<svg class="size-5 text-brand-gray-dark hover:text-black transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='relative'>
+		<img src="/img/bg-office.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+		<div class="container max-w-7xl min-h-220 md:min-h-136 relative z-20 pt-16 pb-16 md:pb-20">
+			<div class="flex justify-center mb-14">
+				<div class="px-18 py-px bg-white w-full text-center md:w-auto">
+					<p class="text-brand-dark font-bold">Kantoor</p>
+				</div>
+			</div>
+			<div class="md:w-1/4 xl:w-1/5">
+				<p class="text-white pb-8">GV Advocaten is een allround kantoor met jarenlange ervaring in diverse vakgebieden waarmee we zowel particulieren, bedrijven als overheden de nodige juridische ondersteuning bieden. Dankzij de integratie van Advocatenkantoor Hoste onder GV Advocaten Familia, versterkten we GV met een uitgebreide expertise in het personen-, familie- en familiaal vermogensrecht.
+				</p>
+				<div class="flex justify-center md:justify-start">
+					<a href="/" class="btn-primary">Ontdek Meer</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container max-w-7xl py-16">
+		<div class="xl:w-5/6 ml-auto flex flex-col md:flex-row gap-16 lg:gap-24 xl:gap-28 justify-between">
+			<div class="md:w-2/5 md:ml-20 lg:ml-32 xl:ml-0">
+				<div class="px-18 py-px bg-brand-primary text-center mb-8">
+					<p class="text-white font-bold">Team</p>
+				</div>
+				<p class="text-brand-dark pb-8">Bij GV Advocaten begrijpen we dat het juridische landschap complex kan zijn. Ons kantoor bestaat uit een multi-disciplinair team advocaten dat een brede kennis combineert met diepgaande expertise op specifieke gebieden.  Of u nu een particulier, een kleine ondernemer of een groot bedrijf bent, wij begrijpen dat uw juridische behoeften uniek zijn. Ontdek ons team. Heeft u vragen? We helpen u graag verder.
+				</p>
+				<a href="/" class="btn-primary">Ontdek het team</a>
+			</div>
+			<div class="md:w-3/5">
+				<img src="/img/team-image.jpg" class="w-full h-auto" alt="">
+			</div>
+		</div>
+	</div>
+	<div class='relative'>
+		<img src="/img/bg-law.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+		<div class="container max-w-7xl min-h-136 relative z-20 pt-12 md:pt-8 lg:pt-14 pb-14 md:pb-8 lg:pb-16">
+			<div class="flex justify-center mb-12 md:mb-10">
+				<div class="px-18 py-px bg-brand-primary w-full text-center md:w-auto">
+					<p class="text-white font-bold">Rechtstakken</p>
+				</div>
+			</div>
+			<div class="md:w-1/2 bg-[#f8f8f8] p-11 lg:p-13">
+				<ul class="list-disc list-inside space-y-1 mb-7">
+					<li>Personen- en familierecht</li>
+					<li>Ondernemingsrecht</li>
+					<li>Vastgoedrecht</li>
+					<li>Bancair recht</li>
+					<li>Strafrecht</li>
+					<li>Contractenrecht</li>
+					<li>Verzekerings- en aansprakelijkheidsrecht</li>
+					<li>Huurrecht en handelshuur</li>
+					<li>Verkeersrecht</li>
+				</ul>
+				<a href="/" class="hover:text-black transition-colors duration-300 text-brand-gray-dark italic ml-5 block">Less meer</a>
+			</div>
+		</div>
+	</div>
+	<div class="bg-brand-primary">
+		<div class="container max-w-7xl py-8 lg:py-16">
+			<div class="flex flex-col md:flex-row gap-10 md:gap-16">
+				<div class="md:w-1/2">
+					<h2 class="uppercase tracking-wide text-white font-bold mb-6 sm:mb-8 text-lg text-center">JOUW <span class="text-brand-dark">EXPERTISE</span> IN ONS TEAM?</h2>
+					<p class="text-white">Om ons team te versterken zijn we op zoek naar een gemotiveerde Advocaat-Stagiair en een Advocaat-Medewerker. Ben jij de kandidaat die we zoeken? Download onderstaand onze vacatures en contacteer ons met je motivatiebrief en CV via <a href="mailto:info@gvadvocaten.be" class="hover:underline">info@gvadvocaten.be</a></p>
+					<ul class="list-disc list-inside marker:text-brand-dark mt-2">
+						<li class="text-white">
+							<a href="/">Advocaat-Stagiair - <span class="italic">Lees meer</span></a>
+						</li>
+						<li class="text-white">
+							<a href="/">Advocaat Medewerker - <span class="italic">Lees meer</span></a>
+						</li>
+					</ul>
+					<div class="hidden md:flex justify-center mt-10">
+						<a href="/" class="btn-primary">CONTACTEER ONS</a>
+					</div>
+				</div>
+				<div class="md:w-1/2 flex justify-center text-center">
+					<div>
+						<h2 class="uppercase tracking-wide text-brand-dark font-bold mb-8 text-lg"><span class="text-white">KOM ONS</span> VERSTERKEN!</h2>
+						<img src="/img/logo-white.png" class="h-40 mx-auto w-auto" alt="">
+						<div class="inline-flex justify-center mt-10">
+							<a href="/" class="btn-primary">ONTDEK HET TEAM</a>
+						</div>
+						<div class="flex md:hidden justify-center mt-6">
+						<a href="/" class="btn-primary">CONTACTEER ONS</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container max-w-7xl py-16">
+		<div class="xl:w-5/6 flex flex-col md:flex-row gap-16 lg:gap-24 xl:gap-28 justify-between">
+			<div class="md:w-3/5">
+				<img src="/img/fee-image.jpg" class="w-full h-auto" alt="">
+			</div>
+			<div class="md:w-2/5 md:mr-20 lg:mr-32 xl:mr-0">
+				<div class="px-18 py-px bg-brand-primary text-center mb-8">
+					<p class="text-white font-bold">Erelonen</p>
+				</div>
+				<p class="text-brand-dark pb-8">Het ereloon van onze advocaten wordt bepaald in functie van de verrichte prestaties, de complexiteit, de hoogdringendheid, etc. Het kantoor garandeert u ten alle tijde transparantie. Wij geven u steeds inzicht in onze manier van werken, de stappen die we in uw dossier nemen en de kosten die we maken. Vooraf bekijken we ook samen met u welke kosten uw verzekeringspolis al dan niet dekt.
+				</p>
+				<a href="/" class="btn-primary">Meer over erelonen</a>
+			</div>
+		</div>
+	</div>
+	<div class='relative'>
+		<img src="/img/bg-holding-books.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+		<div class="container max-w-7xl min-h-145 relative z-20 py-16">
+			<div class="lg:w-3/4 justify-between mx-auto flex flex-col md:flex-row gap-20 md:gap-32">
+				<div class="md:w-2/5 space-y-8">
+					<div class="px-18 py-px bg-white w-full text-center md:w-auto inline-flex">
+						<p class="text-brand-dark font-bold">Hoofdkantoor</p>
+					</div>
+					<div class="text-white">
+						<span class="font-bold">GV ADVOCATEN GENERALIS</span>
+						<p>​Burg. Vandenbogaerdelaan 14 <br/> 8870 Izegem</p>
+						<a href="tel:051300799" class="block hover:text-black transition-colors duration-300">T: 051  30 82 50</a>
+						<a href="tel:051300799" class="block hover:text-black transition-colors duration-300">T: 051  31 82 50</a>
+						<a href="mailto:info@gvadvocaten.be"  class="block hover:text-black transition-colors duration-300">E: info@gvadvocaten.be</a>
+					</div>
+					<div class="text-white">
+						<span class="font-bold">​GV ADVOCATEN FAMILIA</span>
+						<p>Burg. Vandenbogaerdelaan 14 <br/> 8870 Izegem</p>
+						<a href="tel:051305287" class="block hover:text-black transition-colors duration-300">T: 051  30 52 87</a>
+						<a href="tel:051300799" class="block hover:text-black transition-colors duration-300">T: 051  30 26 08</a>
+						<a href="mailto:secretariaat@gvadvocaten.be"  class="block hover:text-black transition-colors duration-300">E: secretariaat@gvadvocaten.be</a>
+					</div>
+				</div>
+				<div class="md:w-2/5 space-y-8">
+					<div class="px-18 py-px bg-white w-full text-center md:w-auto inline-flex">
+						<p class="text-brand-dark font-bold">Bijkantoren</p>
+					</div>
+					<p class="text-white font-medium">Zoutelaan 37/4 <br/>8300 Knokke</p>
+					<p class="text-white font-medium">Hoogstraat 69 <br/>8531 Bavikhove</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container max-w-7xl py-16 lg:py-20 xl:py-24">
+		<div class="md:w-2/3 lg:w-1/2 xl:w-2/5 mx-auto flex justify-center">
+			<div class="text-center">
+				<div class="px-18 py-px bg-brand-primary text-center mb-8 inline-block">
+					<p class="text-white font-bold">Contact</p>
+				</div>
+				<span class="text-black block mb-8">Heeft u vragen? Ons juridisch experten team staat klaar om u bij te staan.
+					<a href="/" class="text-brand-gray-dark hover:text-black transition-colors duration-300">Contacteer ons</a>.
+					Wij helpen u graag verder.
+				</span>
+			</div>
+		</div>
+		<div class="flex flex-col md:flex-row gap-8">
+			<div class="md:w-1/2">
+				<img src="/img/contact-image.jpg" class="w-full h-auto" alt="">
+			</div>
+			<form class="lg:w-2/5">
+				<p class="italic uppercase text-brand-dark text-xs pb-4 lg:pb-6"><span class="text-[#eb5448]">*</span> Indicates required field</p>
+				<div class="pb-5">
+					<label for="Name" class="uppercase text-brand-dark font-bold pb-[2px] block">Naam <span class="text-[#eb5448]">*</span></label>
+					<div class="flex gap-5">
+						<input type="text" placeholder="First" class="w-1/2 bg-[#e5e5e5] border-0 hover:bg-white hover:shadow transition-colors duration-300 placeholder-[#a8a9a9] text-black">
+						<input type="text" placeholder="Last" class="w-1/2 bg-[#e5e5e5] border-0 hover:bg-white hover:shadow transition-colors duration-300 placeholder-[#a8a9a9] text-black">
+					</div>
+				</div>
+				<div class="pb-5">
+					<label for="email" class="uppercase text-brand-dark font-bold pb-[2px] block">Email<span class="text-[#eb5448]">*</span></label>
+					<input type="text" placeholder="Email" class="w-full bg-[#e5e5e5] border-0 hover:bg-white hover:shadow transition-colors duration-300 placeholder-[#a8a9a9] text-black">
+				</div>
+				<div class="pb-5">
+					<label for="message" class="uppercase text-brand-dark font-bold pb-[2px] block">Uw vraag<span class="text-[#eb5448]">*</span></label>
+					<textarea rows="4" name="message" id="message" class="w-full bg-[#e5e5e5] border-0 hover:bg-white hover:shadow transition-colors duration-300 placeholder-[#a8a9a9] text-black"></textarea>
+				</div>
+				<button class="btn-primary">Versturen</button>
+			</form>
+		</div>
 	</div>
 	<Footer />
 </Layout>

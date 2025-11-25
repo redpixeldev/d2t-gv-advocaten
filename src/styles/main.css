@@ -4,10 +4,14 @@
 
 @theme {
 	--font-*: initial;
-	--font-heading: sans-serif;
-	--font-body: sans-serif;
+	--font-lato: 'Lato', sans-serif;
+	--font-montserrat: 'Montserrat', sans-serif;
 
-	--color-brand-primary: ;
+	--color-brand-primary: #8d7824;
+	--color-brand-dark: #2a2a2a;
+	--color-brand-gray: #eaeaea;
+	--color-brand-gray-dark: #666666;
+
 }
 
 @utility container {
@@ -23,12 +27,12 @@
 }
 
 @utility btn-primary {
-	@apply bg-brand-primary text-white;
+	@apply bg-black text-white uppercase text-xs tracking-wider font-bold font-montserrat py-3 px-7 hover:bg-brand-gray-dark transition-colors duration-300 inline-block;
 }
 
 @layer base {
 	html {
-		@apply font-body antialiased;
+		@apply font-lato antialiased;
 	}
 
 	[x-cloak] {
