@@ -7,9 +7,6 @@ export default defineConfig({
 		format: 'file',
 	},
 	vite: {
-		define: {
-			'process.env': process.env,
-		},
 		build: {
 			assetsInlineLimit: 0,
 			rollupOptions: {
