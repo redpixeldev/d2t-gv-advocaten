@@ -1,0 +1,39 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import Cta from '@components/Cta.astro';
+---
+
+<Layout title='Astro'>
+	<Header />
+	<Cta />
+	<div class="container max-w-7xl py-16">
+		<iframe allowtransparency="true" frameborder="0" scrolling="no" style="width: 100%; height: 250px; margin-top: 10px; margin-bottom: 10px;" src="//www.weebly.com/weebly/apps/generateMap.php?map=google&amp;elementid=195437605566379016&amp;ineditor=0&amp;control=3&amp;width=auto&amp;height=250px&amp;overviewmap=0&amp;scalecontrol=0&amp;typecontrol=0&amp;zoom=13&amp;long=3.211636&amp;lat=50.91563009999999&amp;domain=www&amp;point=1&amp;align=1&amp;reseller=true" spellcheck="false"></iframe>
+	</div>
+	<div class="relative">
+		<img src="/img/holding-books-light.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+		<div class="container max-w-7xl md:pb-10 pb-16 pt-16 lg:pt-28 relative z-20">
+			<form class="md:w-3/5 lg:w-2/5 bg-white p-6">
+				<p class="italic uppercase text-brand-dark text-xs pb-4 lg:pb-6"><span class="text-[#eb5448]">*</span> Indicates required field</p>
+				<div class="pb-5">
+					<label for="Name" class="uppercase text-brand-dark font-bold pb-[2px] block">Naam <span class="text-[#eb5448]">*</span></label>
+					<div class="flex gap-5">
+						<input type="text" placeholder="First" class="w-1/2 bg-[#e5e5e5] border-0 hover:bg-white hover:shadow transition-colors duration-300 placeholder-[#a8a9a9] text-black">
+						<input type="text" placeholder="Last" class="w-1/2 bg-[#e5e5e5] border-0 hover:bg-white hover:shadow transition-colors duration-300 placeholder-[#a8a9a9] text-black">
+					</div>
+				</div>
+				<div class="pb-5">
+					<label for="email" class="uppercase text-brand-dark font-bold pb-[2px] block">Email<span class="text-[#eb5448]">*</span></label>
+					<input type="text" placeholder="Email" class="w-full bg-[#e5e5e5] border-0 hover:bg-white hover:shadow transition-colors duration-300 placeholder-[#a8a9a9] text-black">
+				</div>
+				<div class="pb-5">
+					<label for="message" class="uppercase text-brand-dark font-bold pb-[2px] block">Uw vraag<span class="text-[#eb5448]">*</span></label>
+					<textarea rows="4" name="message" id="message" class="w-full bg-[#e5e5e5] border-0 hover:bg-white hover:shadow transition-colors duration-300 placeholder-[#a8a9a9] text-black"></textarea>
+				</div>
+				<button class="btn-primary">Versturen</button>
+			</form>
+		</div>
+	</div>
+	<Footer />
+</Layout>
