@@ -1,0 +1,50 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import Cta from '@components/Cta.astro';
+---
+
+<Layout title='Astro'>
+	<Header />
+	<div class='relative'>
+		<img src="/img/bg-hero-kantoor.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+		<div class="container max-w-7xl min-h-136 relative z-20 py-20 md:pt-18 md:pb-16">
+			<div class="flex justify-center">
+				<div class="md:w-[55%] mx-auto">
+					<img src="/img/logo-horizontal-light.png" class="w-full md:w-auto h-auto md:h-14 lg:h-18 mx-auto w-auto" alt="">
+					<h2 class="text-brand-primary uppercase font-bold text-2xl pt-7 pb-5">
+						<span class="text-white">UW RECHT.</span>
+						ONZE EXPERTISE.
+					</h2>
+					<p class="text-white pb-10">GV Advocaten brengt jong enthousiasme enerzijds en gevestigde Izegemse waarde anderzijds samen in 1 kantoor. Het vernieuwde GV Advocaten is een samensmelting van het bestaande kantoor (GV Advocaten Generalis) en het Advocatenkantoor Hoste (GV Advocaten Familia). GV Advocaten is een allround kantoor met jarenlange ervaring in diverse vakgebieden waarmee we zowel particulieren, bedrijven als overheden de nodige juridische ondersteuning bieden. Advocatenkantoor HOSTE  is sinds meer dan 40 jaar gespecialiseerd in het familierecht en het vermogensrecht.  Door onze krachten te bundelen kunnen we nog beter inspelen op de noden die er op vandaag zijn in een steeds juridisch complexer wordende samenleving. In deze nieuwe samenstelling, wordt GV Advocaten een nóg betere partner voor al uw juridische vragen. Dat doen we op een persoonlijke manier, met een snelle en directe communicatie en een flexibele manier van werken.</p>
+					<div class="flex justify-center">
+						<a href="/" class="btn-primary">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container max-w-7xl pt-10 lg:pt-16 pb-24">
+		<div class="xl:w-[90%] flex flex-col md:flex-row gap-10">
+			<div class="md:w-3/5">
+				<img src="/img/fee-image.jpg" class="w-full h-auto" alt="">
+			</div>
+			<div class="md:w-2/5">
+				<div class="flex justify-center">
+					<div class="px-18 py-px bg-brand-primary text-center mb-8 inline-bock">
+						<p class="text-white font-bold uppercase">JURIDISCH EXPERTEN TEAM</p>
+					</div>
+				</div>
+				<p class="text-brand-dark pb-5 text-left">We staan erop om steeds <span class="font-bold">bereikbaar</span> te zijn enspan <span class="font-bold">vlot te communiceren.</span> U hoeft niet te piekeren over uw juridische problemen. Ons kantoor verzorgt uw dossier en garandeert u <span class="font-bold">heldere juridische informatie.</span> Heeft u vragen? Stoot u op onduidelijkheden? Geen probleem. U contacteert ons beter een keer te veel, dan te weinig.
+				</p>
+				<p class="text-brand-dark pb-8 text-left">Ten allen tijde <span class="font-bold">transparant</span> blijven? Dat staat bij ons voorop. Dat geldt zowel voor onze werkwijze als de procedurele stappen die we in uw dossier nemen. Elke stap wordt op voorhand met u besproken en doorgenomen. U blijft altijd zelf meester over uw dossier.  <span class="font-bold">Transparantie</span> geldt evenzeer voor de verbonden kosten en erelonen. Vooraf worden die met u besproken en vastgelegd.</p>
+			<div class="flex justify-center">
+					<a href="/" class="btn-primary">CONTACTEER ONS</a>
+			</div>
+			</div>
+		</div>
+	</div>
+	<Cta />
+	<Footer />
+</Layout>
